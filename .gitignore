@@ -1,0 +1,9 @@
+# Environment Variables
+api.env
+.env
+
+# Java built files
+*.class
+
+# macOS system files
+.DS_Store

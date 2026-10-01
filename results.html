@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - TrustLens Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Topbar -->
+        <header class="topbar">
+            <a href="index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+                <div class="logo-icon">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2"></div>
+                    <div class="bar bar-3"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">TrustLens</span>
+                    <span class="brand-tagline">From Messy CSV to Trusted Dashboard</span>
+                </div>
+            </a>
+            <div class="profile-area">
+                <div class="company-logo">
+                    <svg width="20" height="20" viewBox="0 0 24 24"><path d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zm12.6 0H12.6V0H24v11.4z" fill="#00a4ef"/></svg>
+                    Microsoft
+                </div>
+                <button class="icon-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span class="badge-dot"></span>
+                </button>
+                <div class="profile-info">
+                    <div class="avatar">PY</div>
+                    <span class="user-name">Prashant Yadav</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="app-body">
+            <!-- Left Sidebar (Dark Mode) -->
+            <aside class="sidebar-left sidebar-dark">
+                <nav class="side-nav">
+                    <a href="index.html" class="nav-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        Home
+                    </a>
+                    <a href="upload.html" class="nav-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                        Upload & Analyze
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                        Data Cleaning
+                    </a>
+                    <a href="#" class="nav-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        Validation
+                    </a>
+                    <a href="results.html" class="nav-item active">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        Dashboard
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content bg-light">
+                <div class="results-grid">
+                    
+                    <!-- Left Section: Dashboard Stats -->
+                    <div class="dashboard-stats">
+                        <!-- Top Banner -->
+                        <div class="dashboard-banner">
+                            <div class="banner-text">
+                                <h1>From Messy CSV to Trusted Dashboard</h1>
+                                <p>Clean &middot; Validate &middot; Analyze &middot; Visualize &middot; Decide with Confidence</p>
+                            </div>
+                            <div class="stepper-mini">
+                                <span class="badge badge-success">5 Trusted Data</span>
+                            </div>
+                        </div>
+
+                        <!-- Top Cards Row -->
+                        <div class="metrics-row">
+                            <!-- Dataset Overview -->
+                            <div class="metric-card col-span-2">
+                                <h3>Dataset Overview</h3>
+                                <div class="dataset-info mt-3">
+                                    <div class="csv-icon-small">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="dataset-details">
+                                        <h4>sales_data.csv</h4>
+                                        <p class="text-muted text-sm">Uploaded on Just Now</p>
+                                        <p class="dataset-meta text-sm font-semibold">48,521 rows &nbsp;&middot;&nbsp; 12 columns</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quality Score -->
+                            <div class="metric-card text-center">
+                                <h3>Data Quality Score</h3>
+                                <div class="score-circle mt-3">
+                                    <div class="score-number">87<span>/100</span></div>
+                                </div>
+                                <p class="text-success text-sm font-semibold mt-2">✓ Good Quality</p>
+                            </div>
+                        </div>
+
+                        <!-- Quality Breakdown -->
+                        <div class="metric-card mt-4">
+                            <h3>Data Quality Dimensions</h3>
+                            <div class="dimensions-grid mt-3">
+                                <div class="dimension-item">
+                                    <div class="dimension-header">
+                                        <span>Completeness</span>
+                                        <span class="dimension-score">92%</span>
+                                    </div>
+                                    <div class="dimension-bar-bg">
+                                        <div class="dimension-bar-fill fill-excellent" style="width: 92%;"></div>
+                                    </div>
+                                </div>
+                                <div class="dimension-item">
+                                    <div class="dimension-header">
+                                        <span>Accuracy</span>
+                                        <span class="dimension-score">85%</span>
+                                    </div>
+                                    <div class="dimension-bar-bg">
+                                        <div class="dimension-bar-fill fill-good" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="dimension-item">
+                                    <div class="dimension-header">
+                                        <span>Consistency</span>
+                                        <span class="dimension-score">88%</span>
+                                    </div>
+                                    <div class="dimension-bar-bg">
+                                        <div class="dimension-bar-fill fill-good" style="width: 88%;"></div>
+                                    </div>
+                                </div>
+                                <div class="dimension-item">
+                                    <div class="dimension-header">
+                                        <span>Validity</span>
+                                        <span class="dimension-score">76%</span>
+                                    </div>
+                                    <div class="dimension-bar-bg">
+                                        <div class="dimension-bar-fill fill-fair" style="width: 76%;"></div>
+                                    </div>
+                                </div>
+                                <div class="dimension-item">
+                                    <div class="dimension-header">
+                                        <span>Uniqueness</span>
+                                        <span class="dimension-score">98%</span>
+                                    </div>
+                                    <div class="dimension-bar-bg">
+                                        <div class="dimension-bar-fill fill-excellent" style="width: 98%;"></div>
+                                    </div>
+                                </div>
+                                <div class="dimension-item">
+                                    <div class="dimension-header">
+                                        <span>Timeliness</span>
+                                        <span class="dimension-score">95%</span>
+                                    </div>
+                                    <div class="dimension-bar-bg">
+                                        <div class="dimension-bar-fill fill-excellent" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Metrics Row -->
+                        <div class="mini-metrics-row mt-4">
+                            <div class="mini-card">
+                                <div class="mini-icon icon-blue"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line></svg></div>
+                                <div class="mini-data">
+                                    <h4>48,521</h4>
+                                    <p>Total Rows</p>
+                                </div>
+                            </div>
+                            <div class="mini-card">
+                                <div class="mini-icon icon-red"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></div>
+                                <div class="mini-data">
+                                    <h4>1,247</h4>
+                                    <p>Duplicates</p>
+                                </div>
+                            </div>
+                            <div class="mini-card">
+                                <div class="mini-icon icon-yellow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div>
+                                <div class="mini-data">
+                                    <h4>382</h4>
+                                    <p>Invalid Records</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Simple Chart Row -->
+                        <div class="metric-card mt-4">
+                            <h3>Sales Trend</h3>
+                            <style>
+                                .bar-chart-container {
+                                    display: flex;
+                                    align-items: flex-end;
+                                    justify-content: space-around;
+                                    height: 160px;
+                                    padding-top: 20px;
+                                    border-bottom: 2px solid var(--border-color);
+                                    margin-bottom: 5px;
+                                }
+                                .bar-group {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: flex-end;
+                                    height: 100%;
+                                    width: 12%;
+                                    gap: 6px;
+                                }
+                                .bar-value {
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    color: var(--primary-blue);
+                                    opacity: 0;
+                                    transform: translateY(10px);
+                                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                                }
+                                .bar-group:hover .bar-value {
+                                    opacity: 1;
+                                    transform: translateY(0);
+                                }
+                                .bar {
+                                    width: 100%;
+                                    background: linear-gradient(180deg, var(--primary-blue) 0%, rgba(37, 99, 235, 0.4) 100%);
+                                    border-radius: 6px 6px 0 0;
+                                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                                    cursor: pointer;
+                                    opacity: 0.7;
+                                }
+                                .bar-group:hover .bar {
+                                    opacity: 1;
+                                    transform: scaleY(1.05);
+                                    transform-origin: bottom;
+                                    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+                                }
+                                .bar-label {
+                                    font-size: 13px;
+                                    color: var(--text-secondary);
+                                    font-weight: 600;
+                                    margin-top: 8px;
+                                }
+                            </style>
+                            <div class="bar-chart-container mt-3">
+                                <div class="bar-group">
+                                    <div class="bar-value">12k</div>
+                                    <div class="bar" style="height: 40%;"></div>
+                                    <div class="bar-label">Jan</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar-value">25k</div>
+                                    <div class="bar" style="height: 75%;"></div>
+                                    <div class="bar-label">Feb</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar-value">18k</div>
+                                    <div class="bar" style="height: 55%;"></div>
+                                    <div class="bar-label">Mar</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar-value">32k</div>
+                                    <div class="bar" style="height: 100%;"></div>
+                                    <div class="bar-label">Apr</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar-value">22k</div>
+                                    <div class="bar" style="height: 65%;"></div>
+                                    <div class="bar-label">May</div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar-value">28k</div>
+                                    <div class="bar" style="height: 85%;"></div>
+                                    <div class="bar-label">Jun</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Section: AI Assistant -->
+                    <div class="ai-assistant-panel">
+                        <div class="ai-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                            <h3>AI Assistant</h3>
+                        </div>
+                        
+                        <div class="chat-area" id="chatArea">
+                            <div class="chat-bubble bot">
+                                <strong>Hello! I can help you:</strong>
+                                <ul>
+                                    <li>Understand your data quality</li>
+                                    <li>Explain transformations</li>
+                                    <li>Generate insights and charts</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="chat-input-area">
+                            <p class="text-sm text-muted mb-2 font-semibold">Try asking:</p>
+                            <div class="suggested-queries">
+                                <span class="query-pill">Show top 5 products by revenue</span>
+                                <span class="query-pill">Which region has the highest sales?</span>
+                            </div>
+                            <div class="input-box mt-3">
+                                <input type="text" id="chatInput" placeholder="Ask anything about your data...">
+                                <button class="send-btn" id="sendBtn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const resultsData = localStorage.getItem('uploadResults');
+            if (resultsData) {
+                const results = JSON.parse(resultsData);
+                
+                // Update file info
+                const datasetTitle = document.querySelector('.dataset-details h4');
+                const datasetMeta = document.querySelector('.dataset-meta');
+                if (datasetTitle) datasetTitle.textContent = results.filename;
+                if (datasetMeta) datasetMeta.innerHTML = `${results.total_rows.toLocaleString()} rows &nbsp;&middot;&nbsp; ${results.columns} columns`;
+                
+                // Update overall score
+                const scoreNumber = document.querySelector('.score-number');
+                const scoreCircle = document.querySelector('.score-circle');
+                if (scoreNumber) scoreNumber.innerHTML = `${results.score}<span>/100</span>`;
+                if (scoreCircle) scoreCircle.style.background = `conic-gradient(#10b981 ${results.score}%, #e2e8f0 ${results.score}%)`;
+                
+                // Update mini metrics (Total Rows, Duplicates, Invalid Records)
+                const miniCards = document.querySelectorAll('.mini-data h4');
+                if(miniCards.length >= 3) {
+                    miniCards[0].textContent = results.total_rows.toLocaleString();
+                    miniCards[1].textContent = results.duplicates.toLocaleString();
+                    miniCards[2].textContent = results.invalid_records.toLocaleString();
+                }
+                
+                // Update dimensions
+                const dimScores = document.querySelectorAll('.dimension-score');
+                const dimFills = document.querySelectorAll('.dimension-bar-fill');
+                
+                const dims = [
+                    { val: results.completeness, idx: 0 },
+                    { val: results.accuracy, idx: 1 },
+                    { val: results.consistency, idx: 2 },
+                    { val: results.validity, idx: 3 },
+                    { val: results.uniqueness, idx: 4 },
+                    { val: results.timeliness, idx: 5 }
+                ];
+                
+                if (dimScores.length >= 6 && dimFills.length >= 6) {
+                    dims.forEach(d => {
+                        dimScores[d.idx].textContent = d.val + '%';
+                        dimFills[d.idx].style.width = d.val + '%';
+                        
+                        // Update colors based on value
+                        dimFills[d.idx].className = 'dimension-bar-fill';
+                        if(d.val >= 90) dimFills[d.idx].classList.add('fill-excellent');
+                        else if(d.val >= 80) dimFills[d.idx].classList.add('fill-good');
+                        else if(d.val >= 60) dimFills[d.idx].classList.add('fill-fair');
+                        else dimFills[d.idx].classList.add('fill-poor');
+                    });
+                }
+            }
+        });
+
+        // --- Chat AI Logic ---
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const chatArea = document.getElementById('chatArea');
+
+        if(sendBtn && chatInput && chatArea) {
+            function sendMessage() {
+                const text = chatInput.value.trim();
+                if(!text) return;
+                
+                // Add user bubble
+                const userBubble = document.createElement('div');
+                userBubble.className = 'chat-bubble user';
+                userBubble.textContent = text;
+                chatArea.appendChild(userBubble);
+                chatInput.value = '';
+                chatArea.scrollTop = chatArea.scrollHeight;
+                
+                // Add loading bubble
+                const botBubble = document.createElement('div');
+                botBubble.className = 'chat-bubble bot';
+                botBubble.innerHTML = '<div class="spinner" style="width:14px; height:14px; display:inline-block; margin-right:8px;"></div> Thinking...';
+                chatArea.appendChild(botBubble);
+                chatArea.scrollTop = chatArea.scrollHeight;
+                
+                // Fetch from Java backend /chat endpoint
+                fetch('http://localhost:5000/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: text })
+                })
+                .then(r => r.json())
+                .then(data => {
+                    botBubble.innerHTML = data.reply || 'Sorry, no reply received.';
+                    chatArea.scrollTop = chatArea.scrollHeight;
+                })
+                .catch(err => {
+                    console.error(err);
+                    botBubble.innerHTML = 'Error communicating with AI Assistant.';
+                });
+            }
+            
+            sendBtn.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if(e.key === 'Enter') sendMessage();
+            });
+            
+            // Allow clicking query pills
+            document.querySelectorAll('.query-pill').forEach(pill => {
+                pill.addEventListener('click', () => {
+                    chatInput.value = pill.textContent;
+                    sendMessage();
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustLens - From Messy CSV to Trusted Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow glow-top-left"></div>
+    <div class="glow glow-top-right"></div>
+    <div class="glow glow-bottom-right"></div>
+
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+                <div class="logo-icon">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2"></div>
+                    <div class="bar bar-3"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">TrustLens</span>
+                    <span class="brand-tagline">From Messy CSV to Trusted Dashboard</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            
+            <button class="btn btn-login" id="openLoginBtn">Login</button>
+        </nav>
+
+        <main class="hero">
+            <div class="hero-left">
+                <span class="badge">Turn Your Data Into Decisions</span>
+                
+                <h1 class="hero-title">
+                    From Messy CSV to<br>
+                    <span class="highlight">Trusted Dashboard</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Clean, validate and visualize your data in minutes.<br>
+                    Transform messy CSV files into accurate, reliable and<br>
+                    insightful dashboards — powered by AI.
+                </p>
+                
+                <a href="upload.html" class="btn btn-primary btn-large">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    Upload Your CSV 
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="#10b981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        No coding required
+                    </div>
+                    <div class="feature-item">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="#10b981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        AI-powered cleaning
+                    </div>
+                    <div class="feature-item">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="#10b981"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        Trusted insights
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <!-- Messy CSV Card (Background) -->
+                <div class="card card-csv">
+                    <div class="card-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                        <h3>Messy CSV</h3>
+                    </div>
+                    <table class="csv-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rahul</td>
+                                <td>21</td>
+                                <td>Delhi</td>
+                            </tr>
+                            <tr class="error-row">
+                                <td>rahul</td>
+                                <td>21</td>
+                                <td>delhi</td>
+                            </tr>
+                            <tr class="error-row">
+                                <td>Priya</td>
+                                <td>-</td>
+                                <td>Mumbai</td>
+                            </tr>
+                            <tr class="error-row">
+                                <td>Amit</td>
+                                <td>-5</td>
+                                <td>Pune</td>
+                            </tr>
+                            <tr>
+                                <td>Neha</td>
+                                <td>25</td>
+                                <td>Blr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Trusted Dashboard Card (Foreground) -->
+                <div class="card card-dashboard">
+                    <div class="card-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18"></path>
+                            <path d="M18 17V9"></path>
+                            <path d="M13 17V5"></path>
+                            <path d="M8 17v-3"></path>
+                        </svg>
+                        <h3>Trusted Dashboard</h3>
+                    </div>
+                    
+                    <div class="dashboard-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Total Sales</span>
+                            <span class="stat-value">₹ 24.8M</span>
+                            <span class="stat-trend up">↑ 12%</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Total Orders</span>
+                            <span class="stat-value">12,582</span>
+                            <span class="stat-trend up">↑ 8%</span>
+                        </div>
+                        
+                        <div class="chart-box">
+                            <span class="stat-label">Sales Trend</span>
+                            <svg class="line-chart" viewBox="0 0 100 40" preserveAspectRatio="none">
+                                <path d="M0,30 L20,20 L40,35 L60,15 L80,25 L100,5" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="0" cy="30" r="3" fill="#2563eb"/>
+                                <circle cx="20" cy="20" r="3" fill="#2563eb"/>
+                                <circle cx="40" cy="35" r="3" fill="#2563eb"/>
+                                <circle cx="60" cy="15" r="3" fill="#2563eb"/>
+                                <circle cx="80" cy="25" r="3" fill="#2563eb"/>
+                                <circle cx="100" cy="5" r="3" fill="#2563eb"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="chart-box">
+                            <span class="stat-label">Top Regions</span>
+                            <div class="pie-chart-container">
+                                <div class="pie-chart"></div>
+                                <div class="pie-legend">
+                                    <div class="legend-item"><span class="dot c-1"></span> Delhi</div>
+                                    <div class="legend-item"><span class="dot c-2"></span> Mumbai</div>
+                                    <div class="legend-item"><span class="dot c-3"></span> Bangalore</div>
+                                    <div class="legend-item"><span class="dot c-4"></span> Others</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="bottom-badge">
+            Reliable Data. Better Decisions.
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            
+            <!-- Step 1: User Details -->
+            <div id="step1" class="modal-step active-step">
+                <h2>Create Account</h2>
+                <p class="text-muted">Fill in your details to get started.</p>
+                <form id="detailsForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="occupancy">Occupancy</label>
+                        <select id="occupancy" required>
+                            <option value="" disabled selected>Select your status</option>
+                            <option value="student">Student</option>
+                            <option value="job">Working Professional</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" id="mobile" required placeholder="9876543210" pattern="[0-9]{10}" title="Please enter a 10-digit mobile number">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" style="margin-bottom: 0;">Send OTP</button>
+                </form>
+            </div>
+
+            <!-- Step 2: OTP Verification -->
+            <div id="step2" class="modal-step">
+                <h2>Verify Mobile</h2>
+                <p class="text-muted">Enter the 4-digit OTP sent to <span id="displayMobile" class="fw-bold text-dark"></span></p>
+                <form id="otpForm">
+                    <div class="otp-inputs">
+                        <input type="text" class="otp-input" maxlength="1" required>
+                        <input type="text" class="otp-input" maxlength="1" required>
+                        <input type="text" class="otp-input" maxlength="1" required>
+                        <input type="text" class="otp-input" maxlength="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" style="margin-bottom: 0; margin-top: 24px;">Verify & Login</button>
+                    <div class="text-center mt-16">
+                        <button type="button" class="btn-link" id="resendOtp">Resend OTP</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Step 3: Success -->
+            <div id="step3" class="modal-step text-center">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="#10b981" width="64" height="64"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                </div>
+                <h2>Login Successful!</h2>
+                <p class="text-muted mt-16">Welcome to TrustLens, <span id="displayName" class="fw-bold text-dark"></span>.</p>
+                <button type="button" class="btn btn-primary w-100" id="closeSuccess" style="margin-bottom: 0; margin-top: 24px;">Go to Dashboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
